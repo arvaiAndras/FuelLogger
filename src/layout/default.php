@@ -25,6 +25,7 @@
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
+            <?php if (isLoggedIn()): ?>
             <li class="nav-item active">
                 <a class="nav-link" href="#">New Log</a>
             </li>
@@ -34,6 +35,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Settings</a>
             </li>
+            <li>
+                <a class="nav-link" href="logout.php">Logout</a>
+            </li>
+            <?php endif; ?>
         </ul>
     </div>
 </nav>
